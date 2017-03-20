@@ -1,10 +1,10 @@
 # arxiv summary translation
 Chekc the arxiv summaries in your favorite language on jupyter notebook.<br>
-Translations will be executed using Google Cloud Translation API (You can select Neural Machine Translation or old version).
+Translations will be executed using Google Cloud Translation API (can select Neural Machine Translation or old version).
 
 ## Prerequisites
 - Google Cloud Translate API premium edition
-  - Sigh up for premium edition on https://services.google.com/fb/forms/translationapi-beta/
+  - Sign up for premium edition on https://services.google.com/fb/forms/translationapi-beta/
   - Get your own credentials json file and put it in the root directory of this repository
 - Docker environment
 
