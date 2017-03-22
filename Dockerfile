@@ -4,3 +4,7 @@ MAINTAINER Yohei Kikuta <diracdiego@gmail.com>
 RUN pip3 install jupyter \
     feedparser \
     --upgrade google-cloud
+
+WORKDIR /work
+
+ENTRYPOINT ["/bin/bash"]
