@@ -25,7 +25,7 @@ class Translate:
             , model=model
         )
         #Return the translated result
-        return result['translatedText']
+        return result['translatedText'], text
     
     def check_arxiv(self, bulk, nmt=True):
         N = len(bulk)
@@ -37,7 +37,7 @@ class Translate:
             pdf_url = bulk[lc]['pdf_url']
             abst = bulk[lc]['summary']
             
-            translation = self.get_translation(abst, nmt)
+            translation, org = self.get_translation(abst, nmt)
             
             print()
             print("{} / {}(Total number)".format(lc+1,N))
@@ -45,6 +45,8 @@ class Translate:
             print(title)
             print()
             print(pdf_url)
+            print()
+            print(org)
             print()
             print(translation)
             
