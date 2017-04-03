@@ -21,14 +21,13 @@ $ docker build -t arxiv_translate .
 ```
 Create the container (change the host port or name as you like).
 ```
-$ docker run -it -p 8888:8888 -v $PWD:/root/work --name arxiv_translate arxiv_translate /bin/bash
+$ docker run -it -p 8888:8888 -v $PWD:/work --name arxiv_translate arxiv_translate
 ```
 
 ## Run the translation script
 Launch the jupyter notebook.
 ```
-(in the container) $ cd /root/work
 (in the container) $ jupyter notebook --ip="*"
 ```
-Then access `localhost:8888` or `<host ip of your docker machine>:8888` on your browser.
+Then access `localhost:8888` or `<host ip of your docker machine>:8888` on your browser.<br>
 Run the cells in `arxiv_translator.ipynb` from top.
